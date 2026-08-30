@@ -1,0 +1,313 @@
+/* ================================
+   ESTILOS GENERALES
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+
+/* ================================
+   MENÚ DE NAVEGACIÓN
+================================ */
+
+header {
+    background: #1e293b;
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* ================================
+   PRESENTACIÓN PRINCIPAL
+================================ */
+
+.presentacion {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.presentacion-texto {
+    flex: 1;
+}
+
+.saludo {
+    color: #0284c7;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.titulo {
+    font-size: 42px;
+    margin: 15px 0;
+    color: #0f172a;
+}
+
+.presentacion-texto h2 {
+    color: #0284c7;
+    margin-bottom: 20px;
+}
+
+.presentacion-texto p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   IMAGEN
+================================ */
+
+.presentacion-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.presentacion-imagen img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.presentacion-imagen p {
+    font-weight: bold;
+    color: #475569;
+}
+
+
+/* ================================
+   BOTONES
+================================ */
+
+.botones {
+    margin-top: 30px;
+}
+
+.boton {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   SECCIÓN OBJETIVO
+================================ */
+
+.bienvenida {
+    max-width: 900px;
+    margin: 30px auto 60px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bienvenida h2 {
+    color: #0284c7;
+}
+
+.bienvenida p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+/* ================================
+   HABILIDADES Y PROYECTOS
+================================ */
+
+.habilidades {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.habilidades > h2 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 35px;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.habilidad {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.habilidad:hover {
+    transform: translateY(-5px);
+}
+
+.habilidad span {
+    font-size: 40px;
+}
+
+.habilidad h3 {
+    color: #0284c7;
+}
+
+.habilidad p {
+    line-height: 1.6;
+}
+
+
+/* ================================
+   IMÁGENES DE PROYECTOS
+================================ */
+
+.habilidad img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+/* ================================
+   PIE DE PÁGINA
+================================ */
+
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+/* ================================
+   DISEÑO PARA CELULARES
+================================ */
+
+@media (max-width: 768px) {
+
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .presentacion-imagen img {
+        width: 220px;
+        height: 220px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .boton {
+        margin-bottom: 10px;
+    }
+}
+/* ================================
+   PÁGINA DE PROYECTOS
+================================ */
+
+.proyectos {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.proyectos > h1 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 40px;
+}
+
+.proyecto {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.proyecto h2 {
+    color: #0284c7;
+    margin-bottom: 20px;
+}
+
+.proyecto h3 {
+    color: #0f172a;
+    margin-top: 30px;
+}
+
+.proyecto p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.proyecto img {
+    display: block;
+    max-width: 100%;
+    width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.proyecto .boton {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+}
