@@ -1,0 +1,232 @@
+/* ==============================
+   ESTILOS GENERALES
+   ============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   CONTENEDOR PRINCIPAL
+   ============================== */
+
+section {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ==============================
+   TITULO
+   ============================== */
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   DESCRIPCION
+   ============================== */
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #64748b;
+}
+
+
+/* ==============================
+   ENLACES
+   ============================== */
+
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 8px;
+    background-color: #1e293b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+
+/* ==============================
+   EFECTO AL PASAR EL MOUSE
+   ============================== */
+
+a:hover {
+    background-color: #38bdf8;
+    transform: translateY(-2px);
+}
+/* ==============================
+   ENCABEZADO
+   ============================== */
+
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #cbd5e1;
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   CONTENIDO PRINCIPAL
+   ============================== */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+
+/* ==============================
+   TARJETA DE BIENVENIDA
+   ============================== */
+
+main section {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* ==============================
+   MENU
+   ============================== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu a {
+    margin: 0;
+}
+/* ==============================
+   FORMULARIO
+   ============================== */
+
+.formulario {
+    text-align: left;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e293b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #38bdf8;
+}
+/* ==============================
+   INVENTARIO
+   ============================== */
+
+.inventario {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inventario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #1e293b;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+.acciones {
+    text-align: center;
+    margin-top: 25px;
+}
